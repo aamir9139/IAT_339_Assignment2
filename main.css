@@ -19,12 +19,20 @@
 	src: url('JosefinSans.ttf');
 
 }
+@font-face{
+
+	font-family:'JosefinSans';
+	font-weight: lighter;
+	font-style: normal;
+	src: url('JosefinSans.ttf');
+
+}
+
 
 
 @font-face{
 
 	font-family:'Muli';
-	font-weight: bold;
 	font-style: normal;
 	src: url('Muli.ttf');
 
@@ -33,21 +41,268 @@
 
 h1{
 	font-family: 'Aclonica';
-	font-size:50px;
-	
+	font-size:3.5rem;	
+	margin-bottom: 1rem;
 }
 
 
 h2{
 	font-family: 'JosefinSans';
-	font-size:30px;	
+	font-size:2.5rem;	
+	margin-bottom: 0.5rem;
 }
+
+
+h3{
+	font-family: 'JosefinSans';
+	font-weight: lighter;
+	font-size:2rem;	
+	margin-bottom: 0.5rem;
+}
+
 
 p{
-
 	font-family: 'Muli';
-	font-size: 16px;
+	font-size: 1rem;
+	padding-right: 60rem;
+}
+
+.button {
+  font-family: 'Muli';
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #45A2B7;
+
 }
 
 
+.button:hover {
+  background-color: #FF7A00;
+  color: white;
+}
+
+.button:focus {
+  background-color: #FF7A00;
+  color: white;
+}
+
+
+.button2 {
+  font-family: 'Muli';
+  border: none;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  background-color: #F06327;
+   }
+
+
+
+
+.button2:hover {
+  background-color: #FF7A00;
+}
+
+.button2:focus {
+	background-color: #FF7A00;  
+}
+
+
+#in_text_link {
+  color: dodgerblue;
+  font-family: Muli;
+  text-decoration: none;
+  font-weight:bold;
+}
+
+#in_text_link:hover{
+  color: blue;
+  text-decoration: none;
+}
+
+#in_text_link:active{
+  background-color: dodgerblue;
+  color: white;
+}
+
+
+label{
+
+	font-family: 'Muli';
+	
+}
+
+label[for=contact_name]{
+
+	font-family: 'Muli';
+		margin-right: 1.3rem;
+
+}
+
+label[for=contact_phone]{
+
+	font-family: 'Muli';
+	margin-right: 1.2rem;
+
+}
+
+
+input[type=text1]{
+
+	padding: 0.5rem 1rem;
+	
+}
+
+input[type=text]{
+
+	padding: 2rem 5rem;
+}
+
+
+
+.Skyblue{
+
+	width:5rem;
+	height:5rem;
+	background-color: #45A2B7;
+	color: white;
+	float: left;
+	margin-right: 0.5rem;
+}
+
+.Orange{
+	margin-right: 0.5rem;
+
+	width:5rem;
+	height:5rem;
+	background-color: #F06327;
+	color: white;
+	float: left;
+
+}
+
+.LightOrange{
+
+	width:5rem;
+	height:5rem;
+	background-color: #FF7A00;
+	color: white;
+	float: left;
+	margin-right: 0.5rem;
+
+}
+
+
+
+
+section{
+	display: block;
+	padding-top: 3rem;
+}
+
+
+.grid{
+  display: grid;
+}
+
+.flex{
+  display: flex;
+}
+
+.c12{
+  grid-template-columns: repeat(12,auto);
+  grid-column-gap: 2rem;
+}
+
+.r6{
+  grid-template-rows: repeat(12,auto);
+  grid-row-gap: 2rem;
+}
+
+
+.grid-container{
+  background-color: #DEDEDE;
+  flex-wrap: wrap;
+  max-width: 75%;
+  justify-content: space-around;
+}
+
+.layout-product-grid{
+  background-color: #D1D1D1;
+  border: 1px solid #F06327;
+  margin:1.5rem;
+  min-width: 10rem;
+  height: 10rem;
+}
+
+
+
+.layout-nav-grid{
+  background-color: #45A2B7;;
+  border: 1px solid #45A2B7;
+  min-width: 20rem;
+  max-width:20rem;
+  height: 45rem;
+}
+
+.nav-logo{
+  grid-column: 2/span 3;
+  grid-row-start:1;
+}
+
+.layout-nav-grid-content{
+  background-color:white;
+  border: 1px solid #45A2B7;
+  min-width:20rem;
+  height: 45rem;
+
+}
+.nav-container{
+  grid-column: 3/span 4;
+  grid-row:2/span 10;
+  background-color:#45A2B7;
+  min-width:5
+  height: 10rem;
+}
+
+
+.navmain{
+  flex:10 1 auto;
+}
+
+.nav-container-items{
+  display:inline-flex;
+  justify-content: space-evenly;
+
+/*  padding: 0 1rem;
+  font-family: 'Muli';
+  border: none;*/
+
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  background-color: #45A2B7;
+  margin: 2rem;
+
+}
+
+.nav-container-items:hover {
+  background-color: #FF7A00;
+  color: white;
+}
+
+.nav-container-items:focus {
+  background-color: #FF7A00;
+  color: white;
+}
 

@@ -26,16 +26,331 @@
             <a href= "index.html"> StyleGuide</a>
             <a href= "wireframes.html"> Wireframes</a>
             <a href= "Citations.html"> Citations</a>
+            <br>
           </nav>
         </header>
 
+
+
+
+
         <main>
 
-	            
+        <section id="headings">
+        	<h2> 
+        	<u>Text Elements </u>
+        	</h2>
+
+        	<h1> This is our logo style </h1>
+        	<code> &lt;h1&gt;This is our logo style &lt;/h1&gt;</code>
+        	<br>
+        	<br>
+        	<code>h1{  font-family: 'Aclonica';
+					   <br>font-size:3.5rem;
+					   <br>font-weight: bold;
+					   <br>font-style: normal;
+					   <br>src: url('Aclonica.ttf')};
+					</code>
+
+        	<h2> This is our header style</h2>    
+        	<code> &lt;h2&gt;This is our header style &lt;/h2&gt;</code>
+        	<br>
+        	<br>
+        	<code>h2{  font-family: 'JosefinSans';
+					   <br>font-size:2.5rem;
+					   <br>font-weight: bold;
+					   <br>font-style: normal;
+					   <br>src: url('JosefinSans.ttf')};
+					</code> 	
+
+
+        	<h3> This is our subheader style</h3>
+			<code> &lt;h3&gt;This is our subheader header style &lt;/h3&gt;</code>
+        	<br>
+        	<br>
+        	<code>h3{  font-family: 'JosefinSans';
+					   <br>font-size:2rem;
+					   <br>font-weight: lighter;
+					   <br>font-style: normal;
+					   <br>src: url('JosefinSans.ttf')};
+					</code> 	
+			<br>
+			<br>
+        	<p> This is our paragraph style.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+			<code> &lt;p&gt;This is our paragraph style &lt;/p&gt;</code>
+        	<br>
+        	<br>
+        	<code>p{  font-family: 'Muli';
+					   <br>font-size:1rem;
+					   <br>font-style: normal;
+					   <br>src: url('Muli.ttf')
+					   <br>padding-right: 60rem;};
+					</code> 	
+
+          <br>
+
+        </section>
+        <!-- Headings section ends -->
+
+
+
+
+
+
+
+
+        <section id="bulletedlist">
+        	<h2> 
+        	<u>Bulleted & Numbered List</u>
+        	</h2>
+		<ul>
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ul>
+		<ol>
+			<li> Item 1 </li>
+			<li> Item 2 </li>
+			<li> Item 3 </li>
+		</ol>
+
+        </section>
+        <!-- Bulleted & Numbered List section ends -->
+
+
+
+
+
+
+
+
+        <section id="in-textlink">
+        <h2> 
+        	<u>In-Text Link</u>
+        </h2>
+       
+		<p> This is an 
+		<a href="#in_text_link" id="in_text_link">in-text</a> link.</p>
+		<br>
+		<code> &lt;p&gt;This is an &lt;a href="#in_text_link"&gt;in-text&lt;/a&gt; link&lt;/p&gt;</code>
+		<br>
+		<br>
+		<code>
+		#in_text_link {<br>
+  		color: dodgerblue;<br>
+  		font-family: helvetica;<br>
+  		text-decoration: none;<br>
+  		font-weight:bold;}<br>
+		<br>
+		#in_text_link:hover{<br>
+ 		 color: blue;<br>
+  		text-decoration: none;}<br>
+		<br>
+		#in_text_link:active{<br>
+  		background-color: dodgerblue;<br>
+  		color: white;}<br>
+		</code>
+		</section>
+	     <!-- In-text link section ends -->
+   
+	    
+
+
+	    <section id="call-to-action">
+	    <h2> 
+        <u>Call-to-Action</u>
+        </h2>
+		<button class="button button1">Call-to-Action</button>
+		<br>
+		<br>
+	 	<code>
+        &lt;button class= "button button1&gt;
+          Call-to-Action&lt;/button&gt;
+        
+      	</code>
+      	<br>
+      	<br>
+      	<code>
+      	.button {<br>
+  		font-family: 'Muli';<br>
+  		border: none;<br>
+ 		color: white;<br>
+ 		padding: 0.5rem;<br>
+  		text-align: center;<br>
+ 		text-decoration: none;<br>
+ 		display: inline-block;<br>
+ 		font-size: 1rem;}<br><br>
+	
+
+		.button1 
+		{
+		background-color: #45A2B7;
+		}<br><br>
+
+
+		.button1:hover <br>{
+  		background-color: #FF7A00;<br>
+ 		 color: white;}<br><br>
+	
+
+		.button1:focus <br>{
+  		background-color: #FF7A00;}<br>
+		
+		</code>
+
+		</section>
+    	<!-- A call-to-action section ends -->
+
+
+
+    <section class='submit-reset-button'>
+	<h2> 
+       <u>Submit and Reset Button</u>
+    </h2>
+   <button class="button2 button2">Submit</button>
+   <button class="button2 button2">Reset</button>
+	<br>
+	<br>
+	<code>
+          &lt;button id="submit_button"&gt;Submit&lt;/button&gt;<br>
+          &lt;button id="reset_button"&gt;Reset&lt;/button&g;
+
+	<br><br>
+
+    .button2 {<br>
+ 	font-family: 'Muli';<br>
+ 	border: none;<br>
+ 	color: white;<br>
+ 	padding: 0.5rem;<br>
+ 	text-align: center;<br>
+    text-decoration: none;<br>
+  	display: inline-block;<br>
+  	font-size: 1rem;<br>
+  	background-color: #F06327;}<br>
+
+	<br>
+	.button2:hover {<br>
+ 	background-color: #FF7A00;}<br>
+	<br>
+	.button2:focus {<br>
+	background-color: #FF7A00;}<br>
+
+    </code>
+
+    </section>
+	<!-- Submit and reset section ends -->
+
+
+
+
+
+
+
+
+
+
+	<section class='text-input-field'>
+	<h2> 
+       <u>Text input field and label</u>
+    </h2>
+
+		<div id="text_input_contact">
+		<form>
+				<h3> We can answer your questions!</h3>
+
+		<div class="contact_text">
+
+			<label for="contact_name">Name:</label>
+			<input type="text1" id="contact_name" placeholder="First and Last Name">
+			<br>
+			<br>
+
+			<label for="contact_phone">Phone:</label>
+			<input type="text1" id="contact_phone" placeholder="Phone Number">
+			<br>
+			<br>
+
+			<label for="contact_message">Message:</label>
+			<input type="text" id="contact_message" placeholder="Enter your message...">
+			<br><br><br>
+
+		</div>
+		</form>
+		</div>
+	</section>
+	<!-- Text input field section ends-->
+
+
+
+
+
+
+
+
+	<section class= 'colour-swatches'>
+	<h2> 
+       <u>Colour Pallette</u>
+    </h2>
+
+	<div class="Skyblue">
+	<p> Skyblue <br> #45A2B7</p>
+	</div>
+	<div class="Orange">
+	<p> Orange <br> #F06327</p>
+	</div>
+	<div class="LightOrange">
+	<p> Light Orange <br> #FF7A00</p>
+	</div>
+
+	</section>
+	<!-- Colour swatch section ends-->
+		
+
+
+
+
+
+
+
+  <section class="grid-container flex">
+                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
+                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
+                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
+                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
+                </section>
+
+                <section class="grid-container flex">
+                        <div class="layout-nav-grid grid c12 r6">
+                            <H1 class="nav-logo">Beach Stuff</H1>
+                                <div class="nav-container">
+                                        <button href= "index.html" class="nav-container-items"> StyleGuide </button>
+                                        <button href= "wireframes.html" class="nav-container-items"> Wireframes </button>
+                                        <button href= "Citations.html" class="nav-container-items"> Citations </button>
+                                    </div>
+                        </div>
+
+
+
+
+                </section>
+
+
+
+
+
+
 
 
 
          </main>
+
+       
+
+
+
+
+
+
 
         <footer>
         </footer>
