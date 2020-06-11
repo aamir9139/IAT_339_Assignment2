@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 
-<!-- HELLOOOOOO -->
-
 <html lang="en">
 
   <head>
@@ -20,12 +18,14 @@
 
         <header>
 
+        <div class="titlestyle">
         <h1> BEACH STUFF </h1>
+      </div>
 
           <nav class="navmain">
-            <a href= "index.html"> StyleGuide</a>
-            <a href= "wireframes.html"> Wireframes</a>
-            <a href= "Citations.html"> Citations</a>
+            <a href= "index.html" class="navmain" >StyleGuide</a>
+            <a href= "wireframes.html" class="navmain"> Wireframes</a>
+            <a href= "Citations.html" class="navmain"> Citations</a>
             <br>
           </nav>
         </header>
@@ -76,7 +76,7 @@
 					</code>
 			<br>
 			<br>
-        	<p> This is our paragraph style.<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        	<p> This is our paragraph style.<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris<br> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <br>reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui<br> officia deserunt mollit anim id est laborum. </p>
 			<code> &lt;p&gt;This is our paragraph style &lt;/p&gt;</code>
         	<br>
         	<br>
@@ -204,36 +204,36 @@
 
 
     <section class='submit-reset-button'>
-	<h2>
+	  <h2>
        <u>Submit and Reset Button</u>
     </h2>
-   <button class="button2 button2">Submit</button>
-   <button class="button2 button2">Reset</button>
-	<br>
-	<br>
-	<code>
+     <button class="button2 button2">Submit</button>
+    <button class="button2 button2">Reset</button>
+	        <br>
+	        <br>
+	        <code>
           &lt;button id="submit_button"&gt;Submit&lt;/button&gt;<br>
           &lt;button id="reset_button"&gt;Reset&lt;/button&g;
 
-	<br><br>
+	       <br><br>
 
     .button2 {<br>
- 	font-family: 'Muli';<br>
- 	border: none;<br>
- 	color: white;<br>
- 	padding: 0.5rem;<br>
- 	text-align: center;<br>
+ 	  font-family: 'Muli';<br>
+  	border: none;<br>
+  	color: white;<br>
+ 	  padding: 0.5rem;<br>
+ 	  text-align: center;<br>
     text-decoration: none;<br>
   	display: inline-block;<br>
   	font-size: 1rem;<br>
   	background-color: #F06327;}<br>
 
-	<br>
-	.button2:hover {<br>
- 	background-color: #FF7A00;}<br>
-	<br>
-	.button2:focus {<br>
-	background-color: #FF7A00;}<br>
+	 <br>
+	 .button2:hover {<br>
+ 	  background-color: #FF7A00;}<br>
+	 <br>
+	 .button2:focus {<br>
+	 background-color: #FF7A00;}<br>
 
     </code>
 
@@ -243,7 +243,7 @@
 
 
   <section class= 'colour-swatches'>
-	<h2>
+	 <h2>
        <u>Colour Pallette</u>
     </h2>
   <section class="colours">
@@ -257,7 +257,7 @@
 	<div class="LightOrange">
 	<p> Light Orange <br> #FF7A00</p>
 	</div>
-</section>
+  </section>
 
 	</section>
 	<!-- Colour swatch section ends-->
@@ -269,7 +269,7 @@
 
 
 
-	<section class='text-input-field'>
+	<section id='text-input-field'>
 	<h2>
        <u>Text input field and label</u>
     </h2>
@@ -291,8 +291,10 @@
 			<br>
 
 			<label for="contact_message">Message:</label>
-			<input type="text" id="contact_message" placeholder="Enter your message...">
+			<input type="text" id="contact_message" placeholder="Enter your message..."> 
+      <button class="button2 button2">Submit</button>
 			<br><br><br>
+   
 
 		</div>
 		</form>
@@ -305,20 +307,76 @@
 
 
 
-  <section class="grid-container flex">
-                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
-                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
-                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
-                    <div class="layout-product-grid"><p id="product-listing-module">product-listing-module</p></div>
-                </section>
+  <section id='product-description'>
 
+
+    <h2>
+       <u>Product description and Review</u><br>
+    </h2>
+ 
+    
+
+    <div class="productreview">
+      
+        <h3>Description</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt <br>mollit anim id est laborum. </p>
+      
+
+       <h3>Reviews</h3>
+       <div class="user2">
+       <img src = "user2.png" class="user2"></img>
+       </div>
+
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+       incididunt ut labore et dolore magna aliqua. </p>
+      <img src = "user2.png" class="user2"></img>
+
+       <div class="contact_text">
+      <input type="text" id="contact_message" placeholder="Enter your review...">
+      <button class="button2 button2">Submit</button>
+
+      </div>
+       </div>
+  </section>
+
+<!-- Product review section ends-->
+
+
+
+
+
+
+
+
+
+
+    <h2>
+       <u>Grid Structure</u>
+    </h2>
+  <section class="grid-container flex">
+    
+                    <!--<div class="layout-product-grid"><p id="product-listing-module">product-image</p></div>
+                    <div class="layout-product-grid"><p id="product-listing-module">product-image</p></div>
+                    <div class="layout-product-grid"><p id="product-listing-module">product-image</p></div>-->
+                    <img src = "shovel.png" class="layout-product-grid"></img>
+                    <img src = "tent3.png" class="layout-product-grid"></img>
+                    <img src = "tent2.png" class="layout-product-grid"></img>
+                    <img src = "surfboard.png" class="layout-product-grid"></img>
+                </section>
+<br>
+
+ <h2>
+       <u>Navigation module</u>
+    </h2>
                 <section class="grid-container flex">
                         <div class="layout-nav-grid grid c12 r6">
                             <H1 class="nav-logo">Beach Stuff</H1>
                                 <div class="nav-container">
-                                        <button href= "index.html" class="nav-container-items"> StyleGuide </button>
-                                        <button href= "wireframes.html" class="nav-container-items"> Wireframes </button>
-                                        <button href= "Citations.html" class="nav-container-items"> Citations </button>
+                                        <button href= "#" class="nav-container-items"> Home </button>
+                                        <button href= "#" class="nav-container-items"> Rental Equipment </button>
+                                        <button href= "#" class="nav-container-items"> About </button>
+                                        <button href= "#" class="nav-container-items"> Contact </button>
+                                        <button href= "#" class="nav-container-items"> My Account </button>
                                     </div>
                         </div>
 

@@ -39,6 +39,30 @@
 }
 
 
+.titlestyle{
+  height: 4rem;
+  width:26rem;
+  background-color: #45A2B7;
+  color:white;
+}
+
+.navmain{
+  color:black;
+  display: inline-block;
+  padding:0.25rem 0.5rem;
+  font-family: 'Muli';
+  text-decoration: none;
+  
+}
+
+.navmain:hover {
+  color: #FF7A00;
+}
+
+.navmain:focus {
+  color: #FF7A00;
+}
+
 h1{
 	font-family: 'Aclonica';
 	font-size:3.5rem;
@@ -64,7 +88,7 @@ h3{
 p{
 	font-family: 'Muli';
 	font-size: 1rem;
-	padding-right: 60rem;
+	
 }
 
 .button {
@@ -124,7 +148,7 @@ p{
 }
 
 #in_text_link:hover{
-  color: blue;
+  color: #FF7A00;
   text-decoration: none;
 }
 
@@ -212,12 +236,32 @@ section{
 }
 
 
+
+.productreview{
+
+  height: 26rem;
+  width:40rem;
+  border: 1px solid #000000;  
+  padding:2rem;
+  
+
+}
+
+.user2{
+  float:left;
+  padding-right: 0.5rem;
+}
+
+
+
 .grid{
   display: grid;
+  background-color: #45A2B7;
 }
 
 .flex{
   display: flex;
+
 }
 
 .c12{
@@ -240,7 +284,7 @@ section{
 }
 
 .layout-product-grid{
-  background-color: #D1D1D1;
+  background-color: #FFFFFF;
   border: 1px solid #F06327;
   margin:1.5rem;
   min-width: 10rem;
@@ -251,30 +295,30 @@ section{
 
 
 .layout-nav-grid{
-  background-color: #45A2B7;;
-  border: 1px solid #45A2B7;
+  border: 1px solid #FFFFFF;  
   min-width: 20rem;
   max-width:20rem;
   height: 45rem;
 }
 
 .nav-logo{
-  grid-column: 2/span 3;
+  /*grid-column: 2/span 3;*/
   grid-row-start:1;
+  color: white;
 }
 
 .layout-nav-grid-content{
-  background-color:white;
-  border: 1px solid #45A2B7;
-  min-width:20rem;
+  background-color:#FFFFFF;
+  border: 1px solid #FFFFFF;  
+  min-width:25rem;
   height: 45rem;
 
 }
 .nav-container{
-  grid-column: 3/span 4;
+  /*grid-column: 3/span 4;*/
   grid-row:2/span 10;
   background-color:#45A2B7;
-  min-width:5
+  min-width:5rem;
   height: 10rem;
 }
 
@@ -285,20 +329,20 @@ section{
 
 .nav-container-items{
   display:inline-flex;
-  justify-content: space-evenly;
 
+  justify-content: space-evenly;
 /*  padding: 0 1rem;
   font-family: 'Muli';
   border: none;*/
 
   color: white;
   padding: 0.5rem;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   font-size: 1rem;
   background-color: #45A2B7;
-  margin: 2rem;
-
+  margin: 1rem;
+   border: 1px solid #FFFFFF;
 }
 
 .nav-container-items:hover {
